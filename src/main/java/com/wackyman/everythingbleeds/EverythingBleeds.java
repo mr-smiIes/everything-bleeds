@@ -34,7 +34,7 @@ public final class EverythingBleeds implements GoopInitializer {
                         0.75f + data.amount() / 4f + entity.getRandom().nextFloat() * 0.3f,
                         2f
                 )
-        ).setWaterHandling(WaterHandling.REPLACE_WITH_CLOUD_PARTICLE).markMature();
+        ).setWaterHandling(WaterHandling.REPLACE_WITH_CLOUD_PARTICLE);
 
         for (EntityType<?> type : Registries.ENTITY_TYPE) {
             if (!LivingEntity.class.isAssignableFrom(type.getBaseClass())) {
