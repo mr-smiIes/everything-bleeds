@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "everything_bleeds_addon",
+  "version": "${version}",
+  "name": "Everything Bleeds Addon",
+  "description": "Makes every LivingEntity emit red Goop when damaged.",
+  "authors": ["wacky man + ChatGPT"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "goop": [
+      "com.wackyman.everythingbleeds.EverythingBleeds"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "1.20.4",
+    "goop": "*"
+  }
+}
